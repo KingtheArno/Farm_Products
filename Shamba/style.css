@@ -21,28 +21,33 @@
 }
 .logo{
     color: #ff7200;
-    font-size: 35px;
+    font-size: 30px;
     font-family: Arial;
-    padding-left: 20px;
+    padding-left: 0px;
     float: left;
     padding-top: 10px;
+}
+.logo span{
+    color: #bfdb1c;
 }
 .menu{
     width: 400px;
     float: left;
     height: 70px;
+    display: flex;
 }
 ul{
     float: left;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 200px;
 }
 ul li{
     list-style: none;
-    margin-left: 62px;
+    margin-left: 6px;
     margin-top: 27px;
-    font-size: 14px;
+    font-size: 5px;
 }
 ul li a{
     text-decoration: none;
@@ -231,3 +236,38 @@ ul li a:hover{
 .icon ion-icon:hover{
     color: #ff7200;
 }
+.dropbtn{
+background-color: transparent;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+}
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1f0e0e;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: rgb(247, 243, 243);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {
+    background-color: #ff7200;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown:hover .dropdown-content:hover {
+    display: block;
+  }
