@@ -10,21 +10,58 @@
     <div class="main">
         <div class="navbar">
             <div class="icon">
-                <h2 class="logo">ShambaFam</h2>
+                   <h2 class="logo">Shamba<span>Fam</span></h2>
             </div>
 
             <div class="menu">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICE</a></li>
-                    <li><a href="#">PRODUCT</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                <ul class="dropdown" id="dropdown">
+                    <li  class="dropbtn"  onmouseover="toggleDropdown()"><a href="#">HOME</a></li>
+                    <div class="dropdown-content" id="dropdownContent">
+                        <a href="#">Our Team</a>
+                        <a href="#">Mission & Vision</a>
+                        <a href="#">Company History</a>
+                      </div>
                 </ul>
+
+                <ul class="dropdown" id="dropdown">
+                    <li class="dropbtn"  onmouseover="toggleDropdown()"><a href="#">ABOUT</a></li>
+                    <div class="dropdown-content" id="dropdownContent">
+                        <a href="#">What we do</a>
+                        <a href="#">Get involved</a>
+                        <a href="#">News</a>
+                      </div>
+                </ul>
+                    
+                    <ul class="dropdown" id="dropdown">
+                        <li class="dropbtn"  onmouseover="toggleDropdown()"><a href="#">SERVICE</a></li>
+                        <div class="dropdown-content" id="dropdownContent">
+                          <a href="#">Connect with farmers</a>
+                          <a href="#">Available products</a>
+                          <a href="#">Sell your prodycts</a>
+                        </div>
+                        </ul>
+
+                    <ul class="dropdown" id="dropdown">
+                        <li class="dropbtn"  onmouseover="toggleDropdown()"><a href="#">PRODUCT</a></li>
+                        <div class="dropdown-content" id="dropdownContent">
+                            <a href="#">Vegetables</a>
+                            <a href="#">Cereals</a>
+                            <a href="#">Fruits</a>
+                          </div>
+                          </ul>
+
+                    <ul class="dropdown" id="dropdown">
+                    <li class="dropbtn"  onmouseover="toggleDropdown()"><a href="#">CONTACT</a></li>
+                    <div class="dropdown-content" id="dropdownContent">
+                        <a href="#">Social media</a>
+                        <a href="#">Telephone</a>
+                      </div>
+                      </ul>
+                
             </div>
             <div class="search">
-                <input class="srch" type="search" placeholder="Type to text">
-                <a href="#"><button class="btn">Search</button></a>
+                <input id="srch1" class="srch" type="search" placeholder="Type to text">
+                <a href="#"><button class="btn" onclick="searchBox()">Search</button></a>
             </div>
         </div>
         <div class="content">
